@@ -238,7 +238,9 @@ $(document).ready(function(){
     		data:{updateId:updateId,email:email,password:password},
     		success:function(data){
                 $("#modal").hide(); 
-                 loadTable();  
+                 loadTable(); 
+                  $(".success-message").html("Data updated successfully").slideDown();
+                 $(".success-message").slideUp(5000); 
     		}
     	});
 
